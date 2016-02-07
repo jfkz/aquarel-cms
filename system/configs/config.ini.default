@@ -1,0 +1,28 @@
+; Насройки cms
+ac_ver         = '1.0-beta'             ; version.     версия cms
+ac_sep         = '_ac-sep_'             ; separator.   разделитель, использующийся при объединении массива в строку
+ac_con         = '_ac-con_'             ; conjunction. заменитель символа &, использующийся при передаче строки скрипту
+
+; Настройки директорий 
+; root_dir     = '/var/www/sitename'    ; настоящий путь к сайту
+
+; Настройки базы данных
+db_driver      = 'mysql'
+db_hostname    = 'localhost'            ; часто бывает localhost
+db_username    = 'db_user'              ; имя пользователя
+db_password    = 'db_password'
+db_name        = 'db_name'
+db_prefix      = 'ac_'                  ; префикс таблиц базы данных
+db_debug       = 'false'
+
+; Настройки Smarty
+smarty_debug   = 'false'
+
+; Настройки загрузки
+load_debug     = 'false'
+
+; Настройки сайта
+site_name      = 'Aquarel'              ; имя сайта
+site_slogan    = 'Do it with AquarelCMS'; слоган сайта
+
+domain_name    = 'aquarel'              ; название домена

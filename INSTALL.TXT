@@ -1,0 +1,4 @@
+Установка 
+
+1. Переименовать файл /system/config.php.sample в /system/config.php и отредактировать его.
+2. Выполнить импорт базы данных: /install.php 

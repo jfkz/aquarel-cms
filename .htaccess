@@ -1,0 +1,36 @@
+AddDefaultCharset utf-8;
+
+php_flag register_globals off
+
+php_value date.timezone "Europe/Moscow"
+
+php_value session.use_trans_sid 0
+php_value session.gc_maxlifetime 100000
+php_value session.cookie_lifetime 100000
+
+php_flag display_errors On
+
+# php_value error_reporting E_ALL
+
+php_flag magic_quotes_gpc off
+php_flag magic_quotes_runtime off
+php_flag allow_call_time_pass_reference on
+
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^([^\.]*)$  "index.php?%{QUERY_STRING}"
+</IfModule>
+
+<FilesMatch "^(\.svn)$">
+  Order allow,deny
+</FilesMatch>
+
+<FilesMatch "(.ini)$">
+  Order allow,deny
+</FilesMatch>
+
+<FilesMatch "(.log)$">
+  Order allow,deny
+</FilesMatch>
